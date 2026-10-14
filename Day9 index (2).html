@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Courses</title>
+  <!-- grid place items in rows & columns-->
+      <!-- display: grid;-->
+  <!-- grid-template-columns tell grid how many columns to create , grid-template-columns: 1fr 1fr;-->
+ <!-- 1fr means one equal fraction of the available space -->
+  <!-- gap add space b/n the grid items-->
+  <style>
+  .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+  }
+  .box{
+    background-color: lightgrey;
+    border:2px solid black;
+    padding:20px;
+   border-radius: 15px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>HTML</h3>
+      <p>I learn that it has body and head </p>
+    </div>
+    <div class="box">
+      <h3>CSS</h3>
+      <p>used for styling</p>
+    </div>
+    <div class="box">
+     <h3>JavaScript</h3>
+     <p>i didn't learn javascript</p>
+      </div>
+    <div class="box">
+      <h3>Python</h3>
+      <p>used to build app</p>
+    </div>
+  </div>
+</body>
+</html>
