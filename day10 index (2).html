@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Responsive Cards</title>
+    
+   <!-- /* responsive design is A responsive website automatically adjusts to different screen sizes */
+    /*on phone 
+    1
+    2 
+    3 
+    on computer 1 2 3 */-->
+    <style>
+    .container{
+      display:flex;
+      gap:20px;
+    }
+      .card{
+        width:150px;
+        height: 150px;
+        background-color: lightgrey;
+        border: 2px solid black;
+        border-radius:15px ;
+        padding: 15px;
+      }
+      @media (max-width:600px){
+    .container{
+        flex-direction:column;
+        align-items: center;
+    }
+}
+/*A media query changes CSS depending on the screen size.*/
+      
+/*max-width: 600px
+Means:
+Apply these styles when the screen width is 600px or less*/
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h3>1</h3>
+        <p>number one</p>
+      </div>
+      <div class="card">
+        <h3>2</h3>
+        <p>number two</p>
+      </div>
+      <div class="card">
+        <h3>3</h3>
+        <p>number three</p>
+      </div>
+    </div>
+  </body>
+</html>
