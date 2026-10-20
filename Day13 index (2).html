@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beautiful Card</title>
+    <style>
+    .card{
+    width:220px;
+    height: 150px;
+    background-color:lightgrey;
+    border:2px solid black;
+    padding:20px;
+    box-shadow: 5px 5px 10px gray;
+    transition: transform 0.5s;
+    transition: background 1.5s;
+    border-radius:15px;
+    }
+    .card:hover{
+    transform: scale(1.05);
+    background-color: skyblue;
+}
+      /* transform changes the appearance of an element without changing the page layout.*/
+      
+      /* scale makes an element larger or smaller*/
+      
+      /* rotate() rotate an element 
+        transform : rotate(10deg); */
+      
+      /* box-shadow: 5px 5px 10px gray;
+      5px :horizontal shadow
+      5px vertical shadow
+      10px blur 
+      gray color */
+</style>
+  </head>
+  <body>
+    <div class="card">
+      <h3>My Beautiful Card</h3>
+      <p>This card grows when you hover over it.</p>
+    </div>
+  </body>
+</html>
