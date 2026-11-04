@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>class manipulation (classlist)</title>
+  <style>
+    .color{
+      background-color:black;
+      color:white;
+    }
+  </style>
+  </head>
+  <body>
+   <h1 id ="head">Welcome to meru tech</h1>
+    <p id ="para">I am learning frontend development</p>
+   <button id="button">Toggle Dark Mode</button>
+    <script>
+      let head =
+        document.getElementById("head");
+      let para = 
+        document.getElementById("para");
+      let button =
+        document.getElementById("button");
+      
+        button.addEventListener("click",
+        function() {
+        head.classList.toggle("color");
+        para.classList.toggle("color");
+        });
+      //classList allows JavaScript to control CSS classes.
+      // .add() to add class
+      // .remove() to remove class
+      // .toggle() adds a class if missing , removes it if present
+    </script>
+  </body>
+</html>
