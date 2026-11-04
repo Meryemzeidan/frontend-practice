@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <h2> Enter ur name </h2>
+    <input id="name" type="text"
+      placeholder  = "your name">
+  
+    
+    <button onclick="greetUser()">say hello</button>
+    <p id="me"></p>
+    <a id="u" href="https://frontend-project-2-one.vercel.app/"></a>
+    <script>
+      function greetUser(){
+        let name=
+          
+      document.getElementById("name").value ;
+      
+      document.getElementById("me").textContent= "hello, " + name ;
+      
+      document.getElementById("u").textContent= "click here ," + name ;
+      }
+      /* Document object model(DOM) allows javascript to access & change htnl elements*/
+      /* document.getelementbyid() this method finds an html element using its id */
+      /* document -> represents the webpage
+      getElementById() -> finds an element by its ID */
+      /* .textcontent=  -> to add textcontent
+         .value   -> to take value from user*/
+    </script>
+  </body>
+</html>
