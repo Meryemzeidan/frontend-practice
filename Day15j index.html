@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events & interactivity</title>
+  </head>
+  <body>
+    <button id="button">Like ♡</button>
+    <p id="count">likes: 0 </p>
+    <script>
+      let count =0;
+      // count starts from 0
+      let button=
+      document.getElementById("button");
+      // for the button id = button
+      button.addEventListener("click",
+     // lister to change when click
+        function(){
+           count++;
+          // increase by 1
+        document.getElementById("count").textContent = 
+          "likes: " + count;
+          // and for id = count add text "likes: " then the count 
+        });
+      // event is an action that happens on a webpage , addEventListenr()
+      // preventDefault()  prevents the default browser action
+    
+    </script>
+  </body>
+</html>
