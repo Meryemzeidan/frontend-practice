@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1 id="h">Meru Tech</h1>
+    <p id="p">I am learning JavaScript</p>
+    <button id="button">change Style</button>
+    <script>
+      let h =
+      document.getElementById("h");
+      let p = 
+      document.getElementById("p");
+      let button =
+      document.getElementById("button");
+
+         button.addEventListener("click",
+          function() {
+           h.style.color ="green";
+           p.style.color ="blue";
+           h.style.fontSize = "35px";
+          });
+      // by this way while using js we can edit css
+        /* to make it back to black
+        if (h.style.color === "green") {
+        h.style.color = "black";
+          } else {
+        h.style.color = "green";
+      } */
+
+    </script>
+  </body>
+</html>
